@@ -43,13 +43,13 @@ header {
 	background: linear-gradient($color-bg-light, $color-bg), url('../img/bg.jpg') no-repeat;
 	background-blend-mode: multiply;
 	background-size: cover;
-}
 
-header h1 {
-	color: $white;
-	font-size: 4.8em;
-	margin-bottom: 0;
-	letter-spacing: 1px;
+	h1 {
+		color: $white;
+		font-size: 4.8em;
+		margin-bottom: 0;
+		letter-spacing: 1px;
+	}
 }
 
 header p {
@@ -80,6 +80,19 @@ footer {
 
 .main-nav {
 	margin-top: 1em;
+
+	li {
+		display: inline-block;
+		margin: 0 0.65em;
+	}
+
+	a {
+		color: $white;
+		font-size: 0.85em;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 0.5em;
+	}
 }
 
 .card {
@@ -88,12 +101,16 @@ footer {
 	padding: 1.5em 1em;
 	border: 1px solid $color-shade;
 	border-radius: 0.25em;
-}
 
-.card h1 {
-	color: $color-primary;
-	margin: 0.35em 0 0;
-	line-height: 1.25;
+	h1 {
+		margin: 0.35em 0 0;
+		line-height: 1.25;
+	}
+
+	.icon,
+	h1 {
+		color: $color-primary;
+	}
 }
 
 .btn-info {
