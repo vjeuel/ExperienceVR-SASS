@@ -489,7 +489,6 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
 }
-
 @media (min-width: 768px) {
   .main-content {
     width: 90%;
@@ -498,6 +497,7 @@ a:hover {
     margin-right: auto;
   }
 }
+
 .inner {
   padding: 0.5em 1em;
 }
@@ -509,12 +509,12 @@ a:hover {
 .intro p {
   font-size: 1.2em;
 }
-
 @media (min-width: 992px) {
   .intro {
     width: 45%;
   }
 }
+
 header {
   position: relative;
   height: 460px;
@@ -538,18 +538,19 @@ header h1 {
   margin-bottom: 0;
   letter-spacing: 1px;
 }
+@media (max-width: 575px) {
+  header h1 {
+    font-size: 3.4em;
+  }
+}
 header p {
   color: #eeea72;
   font-size: 1.25em;
   margin: 0;
 }
-
 @media (max-width: 575px) {
   header {
     height: 340px;
-  }
-  header h1 {
-    font-size: 3.4em;
   }
 }
 @media (min-width: 992px) {
@@ -557,6 +558,7 @@ header p {
     background-position: 0 0, 0 45%;
   }
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -660,7 +662,6 @@ footer::after {
   position: relative;
   z-index: 100;
 }
-
 @media (max-width: 575px) {
   .img-featured {
     display: none;
